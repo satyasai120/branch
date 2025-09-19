@@ -1,0 +1,10 @@
+#inp = float(input("amount of usd: "))
+#num = int(input("exchange the usd to uro: "))
+#Amount = (inp*num)
+#print(f"equvilent amount of uro: {Amount}")
+#print(f"equvilent amount of uro: {add} ")
+
+num = float(input("amount of usd: "))
+num1 = int(input("enter amount of uro: "))
+amount = (num*num1)
+print(f"equvilent amount of money: {amount}")

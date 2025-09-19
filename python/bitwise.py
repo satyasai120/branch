@@ -1,0 +1,12 @@
+print(5 & 4)
+print(5 | 4)
+print(5 ^ 4)
+print(5 >> 2)
+print(5 << 2)
+print(~5)
+print(~(-5))
+#computer cannot store negative values directly, into the order to store negative values we need to 2's compilement values
+print(~7)
+print(~(-7))
+print(~9)
+print(~(-9))
