@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Web Page Example</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #222;
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 0;
+      background: linear-gradient(90deg, #5f2c82, #49a09d);
+      animation: slideIn 2s ease;
+    }
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(-80px); }
+      to { opacity: 1; transform: translateY(0);}
+    }
+
+    .main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: rgba(30,30,40,0.94);
+      border-radius: 10px;
+      box-shadow: 0 4px 30px rgba(0,0,0,0.3);
+      animation: fadeIn 2.5s 0.5s ease backwards;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: scale(0.9);}
+      100% { opacity: 1; transform: scale(1);}
+    }
+
+    h1 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+      margin: 0 0 10px 0;
+      color: #fff;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.7);
+    }
+
+    h2 {
+      color: #49a09d;
+      margin-top: 30px;
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+      line-height: 1.6;
+      margin: 20px 0;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 16px 36px;
+      background: linear-gradient(90deg, #49a09d, #5f2c82);
+      color: #fff;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      margin: 30px 0 0 0;
+      box-shadow: 0 3px 15px rgba(49, 160, 157, 0.24);
+      transition: transform 0.25s, background 0.3s;
+      outline: none;
+    }
+    .button:hover {
+      transform: scale(1.07);
+      background: linear-gradient(90deg, #5f2c82, #49a09d);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Animated Web World</h1>
+    <p>Modern, beautiful, and interactive</p>
+  </header>
+  <div class="main">
+    <h2>Why Choose Animated Pages?</h2>
+    <p>
+      Subtle web animations make sites more engaging by adding visual interest and feedback for user actions.[web:6][web:12]
+      Animations guide attention, highlight features, and improve the overall user experience.
+    </p>
+    <h2>Explore Features</h2>
+    <p>
+      - Smooth transitions when loading content<br>
+      - Interactive, animated hover effects on buttons<br>
+      - Clean layout with responsive, scalable design[web:10][web:7]
+    </p>
+
+    <button class="button">Get Started</button>
+  </div>
+</body>
+</html>
