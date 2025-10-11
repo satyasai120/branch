@@ -1,0 +1,23 @@
+def chatbot_response(user_input):
+    user_input = user_input.lower()
+
+    if "hello" in user_input or "hi" in user_input:
+        return "Hello! How can I help you today?"
+    elif "your name" in user_input:
+        return "I'm your offline chatbot!"
+    elif "bye" in user_input:
+        return "Goodbye!"
+    else:
+        return "I'm not sure how to respond to that."
+
+def main():
+    print("Offline Chatbot (type 'exit' to quit)")
+    while True:
+        user_input = input("You: ")
+        if user_input.lower() in ["exit", "quit"]:
+            break
+        response = chatbot_response(user_input)
+        print("Bot:", response)
+
+if __name__ == "__main__":
+    main()
